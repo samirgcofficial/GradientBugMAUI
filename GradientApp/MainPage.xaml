@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="GradientApp.MainPage">
+    <ContentPage.Background>
+        <!-- StartPoint defaults to (0,0) -->    
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="Yellow"
+                          Offset="0.1" />
+            <GradientStop Color="Green"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Content>
+        <Label Text="I love MAUI"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"/>
+
+    </ContentPage.Content>
+</ContentPage>
+
